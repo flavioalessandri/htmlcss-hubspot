@@ -1,0 +1,70 @@
+/* INIZIO REGOLE GENERALI */ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  background-color: blue;
+}
+
+.margini-laterali{
+  padding: 0 40px;
+}
+
+.pulsante-arancio{
+}
+
+.pulsante-bianco{
+}
+
+.clearfix::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+        /* FINE REGOLE GENERALI */
+
+.header{
+  width: 100%;
+
+  /* debug */
+  background-color: pink;
+  height: 700px;
+  color: white;
+}
+
+.hubspot-logo{
+  float: left;
+  width: 30%;
+}
+
+.nav-main{
+  float: right;
+  width: 40%;
+}
+
+
+.nav-lang{
+  float: left;
+  width: 30%;
+
+  /* debug */
+  background-color: yellow;
+  height: 100px;
+}
+
+
+  .nav1{
+        /* debug */
+    background-color: #9ad3d1;
+    height: 100px;
+  }
+
+  .nav-main ul li,
+  .nav-user ul li{
+    display: inline-block;
+    color: white;
+  }
