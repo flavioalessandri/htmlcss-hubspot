@@ -7,15 +7,15 @@
 
 body{
   width: 100%;
-  background-color: blue;
+  background-color: #f4f9fd;
+  font-style: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .margini-laterali{
   padding: 0 40px;
 }
 
-.pulsante-arancio{
-}
+
 
 .pulsante-bianco{
 }
@@ -29,42 +29,93 @@ body{
 
 .header{
   width: 100%;
-
   /* debug */
   background-color: pink;
-  height: 700px;
-  color: white;
 }
 
-.hubspot-logo{
+.nav1{
+  background-color: #9ad3d1;
+}
+
+.nav2{
+  background-color: white;
+  /* height: 60px; */
+}
+
+.nav1 .lang{
   float: left;
   width: 30%;
 }
 
-.nav-main{
+.nav1 .user{
   float: right;
   width: 40%;
 }
 
-
-.nav-lang{
+.nav2 .hubspot-logo{
+  padding-top: 18px;
   float: left;
-  width: 30%;
+  width: 10%;
+}
 
-  /* debug */
-  background-color: yellow;
-  height: 100px;
+.nav2 .main{
+  float: left;
+  padding-left: 30%;
+  width: 60%;
+}
+
+.nav1 .lang ul,
+.nav2 .main ul,
+.nav1 .user ul{
+  margin:0;
+  padding:0;
+}
+
+i{
+  float: right
+}
+
+.nav1 .lang ul li,
+.nav2 .main ul li,
+.nav1 .user ul li{
+  display: inline-block;
+}
+
+.nav1 .lang ul li a,
+.nav2 .main ul li a,
+.nav1 .user ul li a{
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 20px 20px;
 }
 
 
-  .nav1{
-        /* debug */
-    background-color: #9ad3d1;
-    height: 100px;
-  }
+.nav1 .user ul li a.pulsante-arancio,
+a.pulsante-arancio{
+  text-decoration: none;
+  color: white;
+  background-color: #fe775a;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
 
-  .nav-main ul li,
-  .nav-user ul li{
-    display: inline-block;
-    color: white;
-  }
+
+.header-claim{
+  padding-top: 60px;
+  width: 40%;
+      /* debug */
+  background-color: #9ad3d1;
+}
+
+.header-claim >*{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+.jumbo{
+  background-image: url("../img/jumbotron.png");
+  background-position: right;
+  height: 690px;
+}
