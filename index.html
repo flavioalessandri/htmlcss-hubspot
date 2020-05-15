@@ -4,15 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
     <title>Hubspot</title>
   </head>
 
   <body>
 
-      <!-- header di pagina -->
+    <!-- header di pagina -->
+
+
     <header>
       <div class="header">
+
+        <!-- Barra di navigazione Fixed -->
 
         <div id="navbar-fixed">
           <div class="centratura">
@@ -21,9 +27,9 @@
               <div class="col-1">
                 <nav id="menu-lang">
                   <ul>
-                    <li><i class="fas fa-globe-europe"></i></li>
-                    <li><a href="#">English</a></li>
-                    <li><i class="fas fa-sort-down"></i></li>
+                    <li>
+                      <i class="fas fa-globe-europe"></i>
+                      <a class="carret" href="#">English</a></li>
                     <li><a href="#">Contact us</a></li>
                   </ul>
                 </nav>
@@ -46,6 +52,8 @@
 
 
         <!-- Seconda barra di Navigazione-->
+
+
         <div id="navbar-main">
           <div class="centratura">
             <div class="riga">
@@ -61,15 +69,11 @@
               <div class="col-2">
                 <nav class="main">
                   <ul class="fl-right">
-                    <li><a href="#">Software</a></li>
-                    <li><i class="fas fa-sort-down"></i></li>
+                    <li><a class="carret" href="#">Software</a></li>
                     <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><i class="fas fa-sort-down"></i></li>
-                    <li><a href="#">Partners</a></li>
-                    <li><i class="fas fa-sort-down"></i></li>
-                    <li><a href="#">About</a></li>
-                    <li><i class="fas fa-sort-down"></i></li>
+                    <li><a class="carret" href="#">Resources</a></li>
+                    <li><a class="carret" href="#">Partners</a></li>
+                    <li><a class="carret" href="#">About</a></li>
                 </ul>
               </nav>
             </div>
@@ -78,7 +82,9 @@
       </div>
 
 
-        <!-- Testo all'interno del Header-->
+        <!-- Area Jumbotron-->
+
+
         <div class="jumbo">
           <div class="centratura">
 
@@ -98,40 +104,99 @@
     </header>
 
 
+    <!-- Sezione contenuti -->
+
     <main>
       <div class="main">
         <div class="centratura">
+
+            <!-- Primo Blocco contenuti -->
+
+
           <section id="sez1">
 
-              <div id="subsez1-primo">
-                <div class="container centered">
-                  <img src="img/cube.png" alt="" width="50%">
+
+              <!-- Prima Sezione contenuti -->
+
+
+              <div id="sez1-sub1">
+                <div class="container">
+                  <img src="img/cube.png" alt="" width="30%">
                   <h2>Powerful Alone, Better Together</h2>
                   <p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
                 </div>
               </div>
 
-              <div id="subsez1-secondo">
 
-                <div class="col-1">
-                  <img class="container" src="img/CRM-Illustration.svg" alt="CRM" width="80%">
-                  <div class="pulsante">
-                    <a class="pulsante-arancio" href="#">GetHubSpotFree</a>
+              <!-- Seconda Sezione contenuti -->
+
+
+              <div id="sez1-sub2">
+                <div class="riga">
+
+                  <div class="col-1">
+                    <div class="container">
+                      <div class="">
+                        <img src="img/CRM-Illustration.svg" alt="CRM" width="60%">
+                      </div>
+                      <div class="">
+                        <a class="pulsante-arancio" href="#">GetHubSpotFree</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="container">
+                      <h2>Free Hubspot CSM</h2>
+                      <p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                      <h3>POPULAR FEAUTURES</h3>
                   </div>
                 </div>
-                <div class="container w60 fl-left">
-                  <h2>Free Hubspot CSM</h2>
-                  <p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
               </div>
             </div>
 
 
+            <!-- Terza Sezione contenuti -->
+
+
+            <div id="sez1-sub3">
+              <div class="riga">
+
+                <div class="col-1">
+                  <div class="container">
+                    <div class="">
+                      <img src="img/CRM-Illustration.svg" alt="CRM" width="60%">
+                    </div>
+                    <div class="">
+                      <h3>Marketing Hub</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <hr>
+                    <h3>POPULAR FEAUTRE</h3>
+                    <ul class="dropdown">
+                      <li><a href="#">Software</a></li>
+                      <li><i class="fas fa-sort-down"></i></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Resources</a></li>
+                      <li><i class="fas fa-sort-down"></i></li>
+                      <li><a href="#">Partners</a></li>
+                      <li><i class="fas fa-sort-down"></i></li>
+                      <li><a href="#">About</a></li>
+                      <li><i class="fas fa-sort-down"></i></li>
+                  </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
           </section>
         </div>
-
-
-
-
       </div>
 
 

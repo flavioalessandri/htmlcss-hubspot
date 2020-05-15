@@ -1,3 +1,5 @@
+
+
 /* INIZIO REGOLE GENERALI */
 
 * {
@@ -34,32 +36,76 @@ body {
   padding: 0 20%;
 }
 
+
+[class*="col-"]{
+  float: left;
+}
+
+.fl-right{
+  float: right;
+}
+
+
+.pulsante-arancio{
+  text-decoration: none;
+  color: white;
+  background-color: #fe775a;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+
+
+
+/* regole generali del HEader */
+
+
+header .col-1 ul li{
+  padding-left: 60px;
+}
+
+header .col-1 ul li:first-of-type{
+  padding-left: 0px;
+}
+
+
+header .col-2 ul li{
+  padding-right: 60px;
+}
+
+header .col-2 ul li:last-of-type{
+  padding-right: 0px;
+}
+
 header li{
   display: inline-block;
 }
 
 header li a{
-  padding: 10px 10px;
-  display: inline-block;
+  padding: 5px 10px;
   color: black;
   text-decoration: none;
-  padding-right: 10px;
 }
+
+header .carret::after {
+  content: '\25BC';
+  font-size: 12px;
+}
+
+
+#navbar-fixed .col-1 li{
+  border-right: 2px solid #000;
+}
+
+#navbar-fixed .col-1 li:last-child{
+   border: none;
+}
+
 
 
 #navbar-fixed .col-1,
 #navbar-fixed .col-2{
   width: 50%;
 }
-
-#navbar-main .col-1{
-  width: 10%;
-}
-
-#navbar-main .col-2{
-  width: 90%;
-}
-
 
 #navbar-fixed {
   position: fixed;
@@ -71,6 +117,13 @@ header li a{
   background-color: #f4f9fd;
 }
 
+#navbar-main .col-1{
+  width: 10%;
+}
+
+#navbar-main .col-2{
+  width: 90%;
+}
 
 #navbar-main {
  padding:20px 0;
@@ -78,13 +131,6 @@ header li a{
  background-color: white;
 }
 
-[class*="col-"]{
-  float: left;
-}
-
-.fl-right{
-  float: right;
-}
 
 a.login{
   text-decoration: none;
@@ -95,13 +141,15 @@ a.login{
 }
 
 
-ul li a.pulsante-arancio,
-a.pulsante-arancio{
+ul li a.pulsante-arancio{
   text-decoration: none;
   color: white;
   background-color: #fe775a;
   border-radius: 5px;
+  padding: 5px 10px;
 }
+
+/* regole generali del Jumbo */
 
 
 
@@ -115,25 +163,53 @@ a.pulsante-arancio{
 
 .jumbo .claim{
   padding-top: 200px;
-
+  width: 40%;
 }
+
+
+/* regole generali del Main */
+
 
 .container{
   padding:30px 30px;
-
-  /* debug */
-  background-color: yellow;
-}
-
-#subsez1-primo .container{
   text-align: center;
-
 }
 
-#subsez1-secondo .col-1{
+.container > *{
+  padding:30px 30px;
+}
+
+
+
+
+#sez1-sub2{
+  background-color: white;
+  border-radius: 10px;
+}
+
+#sez1-sub2 .col-1{
   text-align: center;
   width: 40%;
 }
+
+#sez1-sub2 .col-2{
+  text-align: left;
+  width: 60%;
+}
+
+#sez1-sub3 .col-1,
+#sez1-sub3 .col-2,
+#sez1-sub3 .col-3{
+  width: calc(100%/3);
+}
+
+#sez1-sub3 ul{
+  text-align: center;
+}
+
+
+
+
 
 
 
