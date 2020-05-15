@@ -14,65 +14,75 @@
     <header>
       <div class="header">
 
-        <!-- Prima barra di Navigazione-->
+        <div id="navbar-fixed">
+          <div class="centratura">
+            <div class="riga">
 
-        <nav class="nav1">
-          <div class="justified clearfix">
+              <div class="col-1">
+                <nav id="menu-lang">
+                  <ul>
+                    <li><i class="fas fa-globe-europe"></i></li>
+                    <li><a href="#">English</a></li>
+                    <li><i class="fas fa-sort-down"></i></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </nav>
+              </div>
 
+              <div class="col-2">
+                <nav id="menu-user">
+                  <ul class="fl-right">
+                    <li><i class="fas fa-search"></i></li>
+                    <li><a class="login" href="#">Login</a></li>
+                    <li><a class="pulsante-arancio" href="#">GetHubspotFree</a></li>
+                  </ul>
+                </nav>
+              </div>
 
-            <div class="lang">
-              <ul>
-                <li><i class="fas fa-globe-europe"></i></li>
-                <li><a href="#">English</a></li>
-                <li><i class="fas fa-sort-down"></i></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-
-
-            <div class="user">
-              <ul class="fl-right">
-                <li><i class="fas fa-search"></i></li>
-                <li><a id="login" href="#">Login</a></li>
-                <li><a class="pulsante-arancio" href="#">GetHubspotFree</a></li>
-              </ul>
             </div>
 
           </div>
-        </nav>
+        </div>
+
 
         <!-- Seconda barra di Navigazione-->
-        <nav class="nav2">
-          <div class="justified clearfix">
+        <div id="navbar-main">
+          <div class="centratura">
+            <div class="riga">
 
+              <div class="col-1">
+                <div class="hubspot-logo">
+                  <a href="#">
+                    <img src="img/logo.svg" alt="Logo">
+                  </a>
+                </div>
+              </div>
 
-            <div class="hubspot-logo">
-              <a href="#">
-                <img src="img/logo.svg" alt="Logo">
-              </a>
-            </div>
-
-            <div class="main">
-              <ul class="fl-right">
-                <li><a href="#">Software</a></li>
-                <li><i class="fas fa-sort-down"></i></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><i class="fas fa-sort-down"></i></li>
-                <li><a href="#">Partners</a></li>
-                <li><i class="fas fa-sort-down"></i></li>
-                <li><a href="#">About</a></li>
-                <li><i class="fas fa-sort-down"></i></li>
-              </ul>
+              <div class="col-2">
+                <nav class="main">
+                  <ul class="fl-right">
+                    <li><a href="#">Software</a></li>
+                    <li><i class="fas fa-sort-down"></i></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><i class="fas fa-sort-down"></i></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><i class="fas fa-sort-down"></i></li>
+                    <li><a href="#">About</a></li>
+                    <li><i class="fas fa-sort-down"></i></li>
+                </ul>
+              </nav>
             </div>
           </div>
-        </nav>
+        </div>
+      </div>
+
 
         <!-- Testo all'interno del Header-->
         <div class="jumbo">
-          <div class="justified">
+          <div class="centratura">
 
-            <div class="header-claim">
+            <div class="claim">
               <h1>There's a better way to grow</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
               <div class="pulsante">
@@ -90,38 +100,40 @@
 
     <main>
       <div class="main">
+        <div class="centratura">
+          <section id="sez1">
 
-        <section class="section justified">
-
-            <div class="container centered white">
-              <img src="img/cube.png" alt="" width="300">
-              <h2>Powerful Alone, Better Together</h2>
-              <p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-            </div>
-
-        </section>
-
-        <section class="section justified">
-
-            <div class="container white clearfix">
-
-              <div class="icon centered fl-left">
-                <img src="img/cube.png" alt="" width="300">
-                <div class="pulsante">
-                  <a class="pulsante-arancio" href="#">GetHubSpotFree</a>
+              <div id="subsez1-primo">
+                <div class="container centered">
+                  <img src="img/cube.png" alt="" width="50%">
+                  <h2>Powerful Alone, Better Together</h2>
+                  <p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
                 </div>
               </div>
-              <div class="text centered fl-left">
-                <h2>Free Hubspot CSM</h2>
-                <p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+
+              <div id="subsez1-secondo">
+
+                <div class="col-1">
+                  <img class="container" src="img/CRM-Illustration.svg" alt="CRM" width="80%">
+                  <div class="pulsante">
+                    <a class="pulsante-arancio" href="#">GetHubSpotFree</a>
+                  </div>
+                </div>
+                <div class="container w60 fl-left">
+                  <h2>Free Hubspot CSM</h2>
+                  <p>sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+              </div>
             </div>
 
-        </section>
+
+          </section>
+        </div>
 
 
 
 
       </div>
+
 
     </main>
 

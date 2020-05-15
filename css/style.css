@@ -23,120 +23,86 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-.justified{
+
+.riga::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.centratura{
   padding: 0 20%;
+}
+
+header li{
+  display: inline-block;
+}
+
+header li a{
+  padding: 10px 10px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+
+#navbar-fixed .col-1,
+#navbar-fixed .col-2{
+  width: 50%;
+}
+
+#navbar-main .col-1{
+  width: 10%;
+}
+
+#navbar-main .col-2{
+  width: 90%;
+}
+
+
+#navbar-fixed {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding:20px 0;
+  background-color: #f4f9fd;
+}
+
+
+#navbar-main {
+ padding:20px 0;
+ margin-top: 80px;
+ background-color: white;
+}
+
+[class*="col-"]{
+  float: left;
 }
 
 .fl-right{
   float: right;
 }
 
-.fl-left{
-  float: left;
-}
-
-.clearfix::after{
-  display: table;
-  content: "";
-  clear: both;
-}
-
-.main{
-  padding: right;
-}
-        /* FINE REGOLE GENERALI */
-
-/* HEADER REGOLE BARRA NAVIGAZIONE */
-
-
-#login{
+a.login{
   text-decoration: none;
-  color: #fe775a;
+  color: green;
   background-color: white;
+  border: 1px solid #fe775a;
   border-radius: 5px;
-  border: solid 1px #fe775a;
-  padding: 10px 20px;
 }
 
 
-.header{
-  width: 100%;
-}
-
-.nav2{
-  background-color: white;
-  /* height: 60px; */
-}
-
-.nav1 .lang{
-  float: left;
-  width: 30%;
-}
-
-.nav1 .user{
-  float: left;
-  width: 70%;
-  padding-top: 10px;
-}
-
-.nav2 .hubspot-logo{
-  padding-top: 18px;
-  float: left;
-  width: 10%;
-}
-
-.nav2 .main{
-  float: left;
-  width: 90%;
-}
-
-.nav1 .lang ul,
-.nav1 .user ul,
-.nav2 .main ul{
-  margin:0;
-  padding:0;
-}
-
-.nav1 .lang ul li,
-.nav1 .user ul li,
-.nav2 .main ul li{
-  display: inline-block;
-}
-
-.nav1 .lang ul li a,
-.nav1 .user ul li a,
-.nav2 .main ul li a{
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  padding: 20px 7px 20px 15px;
-}
-
-.nav1 .user ul li a.pulsante-arancio,
+ul li a.pulsante-arancio,
 a.pulsante-arancio{
   text-decoration: none;
   color: white;
   background-color: #fe775a;
   border-radius: 5px;
-  padding: 10px 20px;
 }
 
-.nav1 .lang ul li,
-.nav1 .user ul li,
-.nav2 .main ul li{
-  display: inline-block;
-}
-
-
-.header-claim{
-  padding-top: 30px;
-  width: 40%;
-}
-
-/* .header-claim >*{
-  margin-top: 0;
-  margin-bottom: 60px;
-} */
 
 
 .jumbo{
@@ -146,31 +112,27 @@ a.pulsante-arancio{
   background-size: cover;
 }
 
-.section{
-  margin-top: 30px;
-  background-color: red;
+
+.jumbo .claim{
+  padding-top: 200px;
+
 }
 
 .container{
+  padding:30px 30px;
 
+  /* debug */
+  background-color: yellow;
 }
 
-.centered{
+#subsez1-primo .container{
   text-align: center;
-  padding:30px 40px;
+
 }
 
-.white{
-  background-color: white;
-  border-radius: 5px;
-}
-
-.icon{
+#subsez1-secondo .col-1{
+  text-align: center;
   width: 40%;
-}
-
-.text{
-  width: 60%;
 }
 
 
