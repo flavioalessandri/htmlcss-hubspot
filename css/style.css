@@ -1,23 +1,38 @@
-/* INIZIO REGOLE GENERALI */ */
-*{
+/* INIZIO REGOLE GENERALI */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+p {
+  padding: 25px 0;
+  line-height: 25px;
+  color: #33475b;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+body {
   width: 100%;
   background-color: #f4f9fd;
-  font-style: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-.margini-laterali{
-  padding: 0 40px;
+.justified{
+  padding: 0 20%;
 }
 
+.fl-right{
+  float: right;
+}
 
-
-.pulsante-bianco{
+.fl-left{
+  float: left;
 }
 
 .clearfix::after{
@@ -25,16 +40,27 @@ body{
   content: "";
   clear: both;
 }
+
+.main{
+  padding: right;
+}
         /* FINE REGOLE GENERALI */
+
+/* HEADER REGOLE BARRA NAVIGAZIONE */
+
+
+#login{
+  text-decoration: none;
+  color: #fe775a;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 1px #fe775a;
+  padding: 10px 20px;
+}
+
 
 .header{
   width: 100%;
-  /* debug */
-  background-color: pink;
-}
-
-.nav1{
-  background-color: #9ad3d1;
 }
 
 .nav2{
@@ -48,8 +74,9 @@ body{
 }
 
 .nav1 .user{
-  float: right;
-  width: 40%;
+  float: left;
+  width: 70%;
+  padding-top: 10px;
 }
 
 .nav2 .hubspot-logo{
@@ -60,36 +87,30 @@ body{
 
 .nav2 .main{
   float: left;
-  padding-left: 30%;
-  width: 60%;
+  width: 90%;
 }
 
 .nav1 .lang ul,
-.nav2 .main ul,
-.nav1 .user ul{
+.nav1 .user ul,
+.nav2 .main ul{
   margin:0;
   padding:0;
 }
 
-i{
-  float: right
-}
-
 .nav1 .lang ul li,
-.nav2 .main ul li,
-.nav1 .user ul li{
+.nav1 .user ul li,
+.nav2 .main ul li{
   display: inline-block;
 }
 
 .nav1 .lang ul li a,
-.nav2 .main ul li a,
-.nav1 .user ul li a{
+.nav1 .user ul li a,
+.nav2 .main ul li a{
   display: inline-block;
   color: black;
   text-decoration: none;
-  padding: 20px 20px;
+  padding: 20px 7px 20px 15px;
 }
-
 
 .nav1 .user ul li a.pulsante-arancio,
 a.pulsante-arancio{
@@ -100,22 +121,61 @@ a.pulsante-arancio{
   padding: 10px 20px;
 }
 
+.nav1 .lang ul li,
+.nav1 .user ul li,
+.nav2 .main ul li{
+  display: inline-block;
+}
+
 
 .header-claim{
-  padding-top: 60px;
+  padding-top: 30px;
   width: 40%;
-      /* debug */
-  background-color: #9ad3d1;
 }
 
-.header-claim >*{
+/* .header-claim >*{
   margin-top: 0;
-  margin-bottom: 20px;
-}
+  margin-bottom: 60px;
+} */
 
 
 .jumbo{
   background-image: url("../img/jumbotron.png");
-  background-position: right;
-  height: 690px;
+  background-position: bottom right;
+  height: 900px;
+  background-size: cover;
 }
+
+.section{
+  margin-top: 30px;
+  background-color: red;
+}
+
+.container{
+
+}
+
+.centered{
+  text-align: center;
+  padding:30px 40px;
+}
+
+.white{
+  background-color: white;
+  border-radius: 5px;
+}
+
+.icon{
+  width: 40%;
+}
+
+.text{
+  width: 60%;
+}
+
+
+
+
+
+
+/* HEADER FINE REGOLE BARRA NAVIGAZIONE */
