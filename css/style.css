@@ -8,71 +8,42 @@
   box-sizing: border-box;
 
   /* debug */
-  /* border: solid 1px green; */
+  /* border: solid 1px black; */
 }
 
 #sez2 * {
   color: white;
 }
 
-
-header h1,
-header h2, main h2,
-header h3, main h3
-header h4, main h4,
-header h5, main h5
-header h6, main h6{
-  margin: 0 0 30px 0;
-  padding-bottom: 25px;
-  color: #33475b;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: bold;
-}
-
-#sez2 h2,
-#sez2 h3,
-#sez2 h4,
-#sez2 h5,
-#sez2 h6{
-  line-height: 50px;
-  padding: 0;
-  margin:0;
-}
-
-#sez2 h5{
-  font-size: 3em;
-  font-weight: bold;
-}
-
-
-p {
-  font-size: 1.2em;
-}
-
-
 h1 {
-  font-size: 3em;
-  line-height: 1.5em;
+  font-size:3em;
+  font-weight: bold;
 }
+
+h2 {
+  font-size:2em;
+  font-weight: bold;
+}
+
+h2.large {
+  font-size:3em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size:1.5em;
+  font-weight: bold;
+}
+
 
 body {
   width: 100%;
 
-  background-color: grey;
-
-  /* background-color: #f4f9fd; */
+  background-color: #f4f9fd;
 
   color: #33475b;
-  font-size: 14px;
-  line-height: 2em;
+  font-size: 16px;
   font-family: 'Fira Sans', sans-serif;
-
-
 }
 
 
@@ -84,6 +55,11 @@ body {
 
 .centratura{
   padding: 0 20%;
+
+  /* DEBUG */
+    border: solid green 1px;
+
+
 }
 
 
@@ -103,48 +79,45 @@ body {
 /* regole generali del HEader */
 
 
-header .col-1 ul li{
-  padding-left: 60px;
-}
-
-header .col-1 ul li:first-of-type{
-  padding-left: 0px;
-}
-
-
-header .col-2 ul li{
-  padding-right: 60px;
-}
-
-header .col-2 ul li:last-of-type{
-  padding-right: 0px;
-}
 
 header li,
 #sez1-sub2 .checkd li{
   display: inline-block;
+  margin-left: 30px;
+
+/* DEBUG */
+  background-color: green;
+}
+
+header li:first-of-type,
+#sez1-sub2 .checkd li:first-of-type{
+  margin-left: 0px;
 }
 
 header li a{
   color: #33475b;
   text-decoration: none;
-  padding: 8px 10px;
+}
+
+li a.carret:last-of-type::after{
+  margin-right: 0px;
+  background-color: yellow;
 }
 
 header .carret::after {
+  margin: 0 30px;
   content: '\25BC';
-
-  font-size: 1.2em;
+  font-size: .8em;
 }
 
 
-#navbar-fixed .col-1 li{
-  border-right: 2px solid #f4f9fd;
+#menu-lang ul li a.carret{
+   border-right: 2px solid #33475b;
+
 }
 
-#navbar-fixed .col-1 li:last-child{
-   border: none;
-}
+
+
 
 
 
@@ -186,6 +159,7 @@ a.login{
   background-color: white;
   border: 1px solid #fe775a;
   border-radius: 5px;
+  padding: 8px 10px;
 }
 
 
@@ -197,6 +171,7 @@ a.login{
   border: 1px solid #fe775a;
   border-radius: 5px;
   text-decoration: none;
+  padding: 8px 10px;
 }
 
 
@@ -242,11 +217,18 @@ section img[class*="image-s1-"]{
   margin-bottom: 20px;
 }
 
-section img[class*="image-s2-"]{
+/* section img[class*="image-s2-"]{
   position: relative;
   top:0;
   max-width: 80px;
   text-align: center;
+  margin-bottom: 20px;
+} */
+
+section img[class*="image-s3-"]{
+
+  max-width: 120px;
+  margin-right: 6%;
   margin-bottom: 20px;
 }
 
@@ -368,13 +350,19 @@ ul.checkd li a{
 
 
 #sez2{
-  margin: 60px 0;
-  padding: 60px 0;
+  margin: 60px 0 0 0;
+  padding: 60px 0 80px 0;
   width: 100%;
   text-align: center;
   background-image: linear-gradient(#00a8ba , #00b9a9 );
 
 }
+
+#sez1-sub3 .blocco-superiore{
+  height: 300px;
+}
+
+
 
 
 #sez2 .blocco-superiore{
@@ -426,4 +414,37 @@ section #sez2 #tabella .blocco-inferiore h6,{
 
 #sez2 .logos{
   height:40px;
+}
+
+#sez3{
+  padding-top: 60px;
+  background-color: white;
+}
+
+
+#sez3 #sez3-sub1 .col-1{
+width: 30%;
+text-align: left;
+padding-right: 5%;
+padding-left: 7%;
+}
+
+#sez3 #sez3-sub1 .col-2{
+width: 70%;
+padding-left: 10%;
+text-align: right;
+}
+
+
+#sez3 #sez3-sub2 .col-1{
+width: 50%;
+text-align: left;
+padding-right: 4%;
+padding-left: 5%;
+}
+
+#sez3 #sez3-sub2 .col-2{
+width: 50%;
+padding-left: 10%;
+text-align: right;
 }
