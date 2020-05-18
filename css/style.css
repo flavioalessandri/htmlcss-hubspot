@@ -6,24 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* debug */
-  /* border: solid 1px black; */
 }
 
-#sez2 *,
-footer label{
+#sez2 *{
   color: white;
 }
 
-footer{
-  color: #cad5e1;
-  font-weight: bold;
-}
 
-
-
-
+/* FORMATTAZIONI PRINCIPALI DEL TESTO */
 
 
 h2,
@@ -63,6 +53,9 @@ p{
   margin-bottom: 10px;
 }
 
+/* REGOLE GENERALI*/
+
+
 
 body {
   width: 100%;
@@ -74,7 +67,6 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-
 .riga::after{
   display: table;
   content: "";
@@ -85,7 +77,7 @@ body {
   padding: 0 20%;
 
   /* DEBUG */
-    border: solid green 1px;
+    /* border: solid green 1px; */
 
 
 }
@@ -191,7 +183,6 @@ a.login{
 .pulsante-arancio{
   color: white;
   background-color: #fe775a;
-  border: 1px solid #fe775a;
   border-radius: 5px;
   text-decoration: none;
   padding: 8px 10px;
@@ -258,7 +249,7 @@ section img[class*="image-s3-"]{
 
 #sez1-sub1{
 width: 100%;
-padding: 25px 10% 0 10%;
+padding: 0 10% 0 10%;
 margin-top: 60px;
 text-align: center;
 }
@@ -370,7 +361,15 @@ ul.checkd li a{
   padding-right: 20px
 }
 
-/* HSEZIONE2 */
+/* REGOLE SEZIONE1 */
+
+#sez1-sub3 .blocco-superiore{
+  height: 300px;
+}
+
+
+
+/* REGOLE SEZIONE2 */
 
 
 #sez2{
@@ -381,13 +380,6 @@ ul.checkd li a{
   background-image: linear-gradient(#00a8ba , #00b9a9 );
 
 }
-
-#sez1-sub3 .blocco-superiore{
-  height: 300px;
-}
-
-
-
 
 #sez2 .blocco-superiore{
   border-right: solid 1px white;
@@ -474,10 +466,17 @@ text-align: right;
 }
 
 
+  /*REGOLE DEL FOOTER */
+
 
 footer{
 background-color:#32495b;
 padding: 60px 0;
+color: white;
+}
+
+footer h3{
+font-size: 16px;
 }
 
 #footer-sez1 .col-1,
@@ -495,7 +494,8 @@ footer li {
 
 footer #footer-sez3 ul li{
   margin: 0;
-  background-color: yellow;
+  /* DEBUG */
+  /* background-color: yellow; */
 }
 
 
@@ -505,11 +505,12 @@ footer ul.social-list li {
 }
 
 footer li a{
+  color:#91a0ae;
   text-decoration: none;
 }
 
 footer li a.pulsante {
-  color: #33475b;
+  color: #91a0ae;
   background-color: white;
   border-radius: 5px;
   padding: 8px 10px;
@@ -532,7 +533,10 @@ ul.social-list li:first-of-type{
 #footer-sez3 li {
   display: inline-block;
   padding: 0 30px;
-  background-color: red;
+
+
+  /* DEBUG */
+  /* background-color: red; */
 }
 
 #footer-sez3{
@@ -546,4 +550,16 @@ ul.social-list li:first-of-type{
 
 #footer-sez3 ul li:last-of-type{
   padding-right: 0;
+}
+
+footer a:hover{
+  color: #0091ae;
+}
+
+a.pulsante-arancio:hover{
+  background-color: rgba(254, 119, 90, 0.5);
+}
+
+a.login:hover{
+  background-color: rgba(254, 119, 90, 0.2);
 }
