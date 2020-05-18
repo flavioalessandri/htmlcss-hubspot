@@ -12,6 +12,18 @@
   color: white;
 }
 
+/* INIZIO REGOLE GENERALI PER LISTE ED ELEMENTI DI LISTA*/
+
+
+header a,
+main a{
+  text-decoration: none;
+  color: #33475b;
+}
+
+li{
+  list-style: none;
+}
 
 /* FORMATTAZIONI PRINCIPALI DEL TESTO */
 
@@ -53,15 +65,14 @@ p{
   margin-bottom: 10px;
 }
 
+
 /* REGOLE GENERALI*/
 
 
 
 body {
   width: 100%;
-
   background-color: #f4f9fd;
-
   color: #33475b;
   font-size: 16px;
   font-family: 'Fira Sans', sans-serif;
@@ -75,11 +86,6 @@ body {
 
 .centratura{
   padding: 0 20%;
-
-  /* DEBUG */
-    /* border: solid green 1px; */
-
-
 }
 
 
@@ -91,50 +97,14 @@ body {
   float: right;
 }
 
-
-
-
-
-
 /* regole generali del HEader */
 
 
-
-header li,
-#sez1-sub2 .checkd li{
-  display: inline-block;
-  margin-left: 30px;
-}
-
-header li:first-of-type,
-#sez1-sub2 .checkd li:first-of-type{
-  margin-left: 0px;
-}
-
-header li a{
-  color: #33475b;
-  text-decoration: none;
-}
-
-header #navbar-fixed a.carret::after {
-  margin-right:30px;
-
-}
 header .carret::after {
   margin-left:30px;
   content: '\25BC';
   font-size: .8em;
 }
-
-
-#menu-lang ul li a.carret{
-   border-right: 2px solid #33475b;
-}
-
-
-
-
-
 
 #navbar-fixed .col-1,
 #navbar-fixed .col-2{
@@ -199,10 +169,6 @@ main .pulsante-arancio{
 }
 
 
-
-
-
-
 /* regole generali del Jumbo */
 
 
@@ -220,9 +186,6 @@ main .pulsante-arancio{
   width: 40%;
 }
 
-
-
-
 /* PADDING INTERNO GENERALE */
 
 
@@ -231,19 +194,11 @@ section img[class*="image-s1-"]{
   margin-bottom: 20px;
 }
 
-/* section img[class*="image-s2-"]{
-  position: relative;
-  top:0;
-  max-width: 80px;
-  text-align: center;
-  margin-bottom: 20px;
-} */
-
 section img[class*="image-s3-"]{
-
   max-width: 120px;
   margin-right: 6%;
   margin-bottom: 20px;
+  vertical-align: middle;
 }
 
 
@@ -289,8 +244,6 @@ section img[class*="image-s3-"]{
 
 /* STILE H3 ALL'INTERNO DI SUBSEZIONE 2 */
 
-
-
 #sez1-sub2 .col-1{
   width: 30%;
   vertical-align:middle;
@@ -309,7 +262,7 @@ section img[class*="image-s3-"]{
 }
 
 #sez1-sub2 .col-2 h4 {
-  display: inline-block;  
+  display: inline-block;
   padding-bottom: 0;
 }
 
@@ -343,17 +296,6 @@ hr.line{
   margin-bottom: 30px;
 }
 
-ul.checkd li{
-  margin:4px 0;
-  list-style: none;
-  padding-right: 5%;
-  line-height: 12px;
-}
-
-ul.checkd li a{
-  text-decoration: none;
-}
-
 .fa-check-circle{
   color: #fe775a;
   padding-right: 20px
@@ -366,7 +308,6 @@ ul.checkd li a{
 }
 
 
-
 /* REGOLE SEZIONE2 */
 
 
@@ -376,7 +317,6 @@ ul.checkd li a{
   width: 100%;
   text-align: center;
   background-image: linear-gradient(#00a8ba , #00b9a9 );
-
 }
 
 #sez2 .blocco-superiore{
@@ -392,9 +332,7 @@ ul.checkd li a{
 #sez2 .col-4 .blocco-superiore,
 #sez2 .col-4 .blocco-inferiore{
   border-right: 0;
-
 }
-
 
 
 #sez2 .col-1,
@@ -427,7 +365,25 @@ section #sez2 #tabella .blocco-inferiore h6,{
 
 
 #sez2 .logos{
+  display: inline-block;
   height:40px;
+  vertical-align: middle;
+}
+
+
+/* REGOLE SEZIONE3 */
+
+
+#sez3 .v1{
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#sez3 .logos{
+  width:20%;
+  height: 100px;
+  display: inline;
 }
 
 #sez3{
@@ -477,64 +433,43 @@ footer h3{
   font-size: 16px;
 }
 
+footer li a{
+  color:#91a0ae;
+  text-decoration: none;
+}
+
+  /*REGOLE DEL FOOTER pulsante grigio */
+
+footer li a.pulsante {
+  color: #91a0ae;
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+footer .col-4 .footer-list li:last-of-type{
+  margin:15px 0 7px 0;
+}
+
+
+#footer-sez1{
+  margin-bottom: 80px;
+}
+
 #footer-sez1 .col-1,
 #footer-sez1 .col-2,
 #footer-sez1 .col-3,
 #footer-sez1 .col-4{
   width: 25%;
   text-align: left;
+  line-height: 40px;
 }
 
-footer li {
-  list-style: none;
-  margin: 40px 0;
-}
-
-footer #footer-sez3 ul li{
-  margin: 0;
-  /* DEBUG */
-  /* background-color: yellow; */
-}
-
-
-footer ul.social-list li {
-  display: inline-block;
-  margin:40px 20px
-}
-
-footer li a{
-  color:#91a0ae;
-  text-decoration: none;
-}
-
-footer li a.pulsante {
-  color: #91a0ae;
-  background-color: white;
-  border-radius: 5px;
-  padding: 8px 10px;
-}
-
-.col-4 ul.footer-list li:last-of-type{
-  margin-bottom: 0;
-}
-
-ul.social-list li:first-of-type{
-  margin-left: 0;
-}
 
 #footer-sez2{
   text-align: center;
   border-bottom: 1px solid white;
-}
-
-#footer-sez2 #list-lang li,
-#footer-sez3 li {
-  display: inline-block;
-  padding: 0 30px;
-
-
-  /* DEBUG */
-  /* background-color: red; */
+  padding-bottom: 20px;
 }
 
 #footer-sez3{
@@ -546,9 +481,55 @@ ul.social-list li:first-of-type{
   width:50%;
 }
 
-#footer-sez3 ul li:last-of-type{
+
+/* REFACTORING REGOLE LISTE*/
+
+ul[class$="lx"] li{
+  padding: 10px 25px;
+}
+
+
+ul[class$="rx"] li{
+  padding: 10px 25px;
+}
+
+
+ul.social-inl-rx li{
+  padding: 10px 10px;
+}
+
+
+ul.social-inl li{
+  padding: 10px 10px;
+}
+
+
+ul[class$="rx"] li:last-child{
   padding-right: 0;
 }
+
+ul[class*="inl"] li{
+  display: inline-block;
+}
+
+ul[class*="flr"]{
+  float: right;
+}
+
+
+#navbar-fixed ul[class$="lx"] li:first-child{
+  padding-left: 0;
+  border-right: 2px solid #32495b;
+}
+
+
+ul[class$="lx"] li:first-child{
+  padding-left: 0;
+}
+
+
+
+
 
 footer a:hover{
   color: #0091ae;
