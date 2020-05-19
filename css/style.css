@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 #sez2 *{
@@ -134,7 +135,7 @@ header .carret::after {
   font-weight: bold;
   background-color: white;
   padding:20px 0;
-  margin-top: 62.5px;
+  margin-top: 90px;
 }
 
 
@@ -159,7 +160,7 @@ a.login{
 }
 
 
-.jumbo .pulsante-arancio,
+.jumbotron .pulsante-arancio,
 main .pulsante-arancio{
   display: block;
   padding:20px 50px;
@@ -171,19 +172,42 @@ main .pulsante-arancio{
 
 /* regole generali del Jumbo */
 
+.jumbotron{
+  position: relative;
+  top:0;
+  width: 100%;
+  height: 700px;
 
-.jumbo{
-  background-image: url("../img/jumbotron.png");
-  background-position: bottom right;
-  height: 900px;
-  background-size: cover;
+  background-color: #fff4ef;
+
+}
+
+.jumbotron-graphic{
+  position: absolute;
+  bottom:0;
+  right:0;
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.jumbotron .over-graphic{
+  position: absolute;
+  left:0;
+  width:100%;
+  bottom:0;
+  background-color: rgba(175,235,228, 0.9);
+  border-top: 4px solid #33475b;
+  height: 84px;
+  z-index: 2;
 }
 
 
-.jumbo .claim{
+.jumbotron .claim{
   position: relative;
-  top: 120px;
+  top:130px;
   width: 40%;
+  z-index: 3;
 }
 
 /* PADDING INTERNO GENERALE */
@@ -301,7 +325,16 @@ hr.line{
   padding-right: 20px
 }
 
+.fa-search{
+  color: #0091ae;
+  padding-right: 20px
+}
+
+
+
 /* REGOLE SEZIONE1 */
+
+
 
 #sez1-sub3 .blocco-superiore{
   height: 300px;
@@ -353,7 +386,7 @@ section div i[class*="far fa-"]{
 }
 
 section #sez2 #tabella .blocco-superiore h5,
-section #sez2 #tabella .blocco-inferiore h6,{
+section #sez2 #tabella .blocco-inferiore h6{
   margin:0;
   padding:0;
 }
@@ -364,7 +397,7 @@ section #sez2 #tabella .blocco-inferiore h6,{
 
 
 
-#sez2 .logos{
+#sez2 .logo{
   display: inline-block;
   height:40px;
   vertical-align: middle;
@@ -374,15 +407,13 @@ section #sez2 #tabella .blocco-inferiore h6,{
 /* REGOLE SEZIONE3 */
 
 
-#sez3 .v1{
+#sez3 .col-2 .customers{
   width: 100%;
   display: inline-block;
   vertical-align: middle;
 }
 
-#sez3 .logos{
-  width:20%;
-  height: 100px;
+#sez3 .col-2 .customers .logo{
   display: inline;
 }
 
@@ -448,7 +479,7 @@ footer li a.pulsante {
 }
 
 footer .col-4 .footer-list li:last-of-type{
-  margin:15px 0 7px 0;
+  margin:7px 0 7px 0;
 }
 
 
@@ -529,6 +560,8 @@ ul[class$="lx"] li:first-child{
 
 
 
+
+/* REGOLE DI HOVER */
 
 
 footer a:hover{
