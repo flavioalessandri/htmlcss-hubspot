@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid black; */
+
+  border: 1px solid black;
 }
 
 #sez2 *{
@@ -28,7 +29,7 @@ li{
 
 /* FORMATTAZIONI PRINCIPALI DEL TESTO */
 
-
+h1,
 h2,
 h2.large,
 h3,
@@ -86,7 +87,7 @@ body {
 }
 
 .centratura{
-  padding: 0 20%;
+  padding: 0 10%;
 }
 
 
@@ -196,7 +197,7 @@ main .pulsante-arancio{
   left:0;
   width:100%;
   bottom:0;
-  background-color: rgba(175,235,228, 0.9);
+  background-color: rgba(175,235,228, 0.5);
   border-top: 4px solid #33475b;
   height: 84px;
   z-index: 2;
@@ -218,12 +219,7 @@ section img[class*="image-s1-"]{
   margin-bottom: 20px;
 }
 
-section img[class*="image-s3-"]{
-  max-width: 120px;
-  margin-right: 6%;
-  margin-bottom: 20px;
-  vertical-align: middle;
-}
+
 
 
 #sez1-sub1{
@@ -406,15 +402,23 @@ section #sez2 #tabella .blocco-inferiore h6{
 
 /* REGOLE SEZIONE3 */
 
+section img[class*="image-s3-"]{
+  max-width: 120px;
+  margin: 0 6%;
+  margin-bottom: 20px;
+}
+
 
 #sez3 .col-2 .customers{
   width: 100%;
   display: inline-block;
-  vertical-align: middle;
 }
 
 #sez3 .col-2 .customers .logo{
-  display: inline;
+  width:24%;
+  display: inline-block;
+  /* display: inline; */
+  vertical-align: middle;
 }
 
 #sez3{
@@ -432,7 +436,7 @@ section #sez2 #tabella .blocco-inferiore h6{
 
 #sez3 #sez3-sub1 .col-2{
   width: 70%;
-  padding-left: 10%;
+  padding-left: 2%;
   text-align: right;
 }
 
